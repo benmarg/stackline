@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 interface DataContainerProps {
   product: {
@@ -42,7 +43,13 @@ const DataContainer: React.FC<DataContainerProps> = ({ product }) => {
         <div className="mx-4 text-center text-sm font-light">
           {item?.subtitle}
         </div>
-        <div className="w-full border-t border-gray-200"> </div>
+        <div className="w-full border-b border-t border-gray-200 px-3 pb-4 pt-3">
+          {item?.tags.map((tag) => (
+            <Badge className="mx-1 mt-2" variant="secondary" key={tag}>
+              {tag}
+            </Badge>
+          ))}
+        </div>
       </div>
     </div>
   );
