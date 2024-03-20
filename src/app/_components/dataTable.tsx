@@ -58,8 +58,8 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div>
-      <div className="flex items-center py-4">
+    <div className="h-fit w-full bg-white p-6 drop-shadow-xl">
+      <div className="flex py-4">
         <div className="flex">
           <Input
             placeholder="Search for a date..."
