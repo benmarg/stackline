@@ -30,8 +30,8 @@ interface DataContainerProps {
 const DataContainer: React.FC<DataContainerProps> = ({ product }) => {
   const item = product[0];
   return (
-    <div className="h-[100vh] w-[100vh] drop-shadow-lg">
-      <div className="flex h-[80%] w-[30%] flex-col items-center gap-3 bg-white pt-3">
+    <div className="h-[100vh] w-[35%] drop-shadow-lg">
+      <div className="flex h-[80%] flex-col items-center gap-3 bg-white pt-3">
         <Image
           src={item?.image ?? ""}
           alt="product image"
